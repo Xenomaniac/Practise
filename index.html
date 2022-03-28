@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="naslovi">
+		<h1>OUR PORTFOLIO</h1>
+		<img src="../Cudo portfolio/Line.png">
+		<h2>Neque porro quisqam est, qui dolorem ipsum quia dolor sit amet</br> consectetur, adipisci velit, sed quia non numquam</h2>
+	</div>
+	<div class="galery-sliders">
+		<span class="dot" onclick="currentSlide(1)">ALL</span>
+		<span class="dot" onclick="currentSlide(2)">WEB</span>
+		<span class="dot" onclick="currentSlide(3)">APPS</span>
+		<span class="dot" onclick="currentSlide(4)">ICONS</span>
+	</div>
+    <div class="slideshow-container">
+
+    <div class="mySlides galery">
+      <img class="prvilaptop" src="../Cudo portfolio/laptop.png">
+      <p class="prvi">ISOMETRIC PERSPECTIVE MOCK-UP</p>
+      <img class="drugilaptop" src="../Cudo portfolio/laptop.png">
+		<p class="drugi">TIME ZONE APP UI</p>      
+      <img class="trecilaptop" src="../Cudo portfolio/laptop.png">
+		<p class="treci">VIRO MEDIA PLAYERS UI</p>
+      <img class="cetvrtilaptop" src="../Cudo portfolio/laptop.png">
+		<p class="cetvrti">BLOG MAGAZIN FLAT UI KIT</p>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="prvilaptop" src="../Cudo portfolio/laptop2.png">
+      <p class="prvi">ISOMETRIC PERSPECTIVE MOCK-UP</p>
+      <img class="drugilaptop" src="../Cudo portfolio/laptop2.png">
+		<p class="drugi">TIME ZONE APP UI</p>      
+      <img class="trecilaptop" src="../Cudo portfolio/laptop2.png">
+		<p class="treci">VIRO MEDIA PLAYERS UI</p>
+      <img class="cetvrtilaptop" src="../Cudo portfolio/laptop2.png">
+		<p class="cetvrti">BLOG MAGAZIN FLAT UI KIT</p>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="prvilaptop" src="../Cudo portfolio/laptop3.png">
+      <p class="prvi">ISOMETRIC PERSPECTIVE MOCK-UP</p>
+      <img class="drugilaptop" src="../Cudo portfolio/laptop3.png">
+		<p class="drugi">TIME ZONE APP UI</p>      
+      <img class="trecilaptop" src="../Cudo portfolio/laptop3.png">
+		<p class="treci">VIRO MEDIA PLAYERS UI</p>
+      <img class="cetvrtilaptop" src="../Cudo portfolio/laptop3.png">
+		<p class="cetvrti">BLOG MAGAZIN FLAT UI KIT</p>
+    </div>
+    <div class="mySlides fade">
+      <img class="prvilaptop" src="../Cudo portfolio/laptop1.png">
+      <p class="prvi">ISOMETRIC PERSPECTIVE MOCK-UP</p>
+      <img class="drugilaptop" src="../Cudo portfolio/laptop1.png">
+		<p class="drugi">TIME ZONE APP UI</p>      
+      <img class="trecilaptop" src="../Cudo portfolio/laptop1.png">
+		<p class="treci">VIRO MEDIA PLAYERS UI</p>
+      <img class="cetvrtilaptop" src="../Cudo portfolio/laptop1.png">
+		<p class="cetvrti">BLOG MAGAZIN FLAT UI KIT</p>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+	<button class="zadnjedugme">LOAD MORE PROJECTS</button>
+
+
+
+
+	<script type="text/javascript">
+		let slideIndex = 1;
+			showSlides(slideIndex);
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+} 
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Titillium Web";
+}
+body {
+	background: #ffdd99;
+	height: 1300px;
+}
+h1 {
+	font-size: 40px;
+	letter-spacing: 4px;
+	line-height: 30px;
+	color: #393939;
+	margin-top: 5%;
+	text-transform: uppercase;
+	text-align: center;
+}
+img {
+	position: relative;
+	left: 47%;
+}
+h2 {
+	text-align: center;
+}
+.galery-sliders {
+	position: relative;
+	margin-top: 5%;
+	left: 35%;
+	width: 50%;
+	height: 38px;
+	border-radius: 4px;
+}
+.galery-sliders button {
+	margin: 20px;
+	width: 84px;
+	height: 38px;
+}
+span.dot {
+	margin-left: 5%;
+	padding: 10px;
+}
+.slideshow-container {
+	position: absolute;
+	right: 40%;
+	margin: 10px;
+	padding: 10px;
+	width: 80%;
+	top: 90%;
+}
+
+.prvilaptop {
+	position: absolute;
+	left: 45%;
+	top: 550%;
+}
+.prvi {
+	width: 25%;
+	position: absolute;
+	left: 55%;
+	top: 150%;
+}
+.drugilaptop {
+	position: absolute;
+	left: 90%;
+	top: 550%;
+}
+.trecilaptop {
+	position: absolute;
+	left: 43%;
+	bottom: -250%;
+	padding: 30px;
+}
+.cetvrtilaptop {
+	position: absolute;
+	left: 90%;
+	bottom: -110%;
+}
+p.drugi  {
+	width: 20%;
+	position: absolute;
+	top: 200%;
+	left: 105%;
+}
+p.treci {
+	position: absolute;
+	left: 60%;
+	top: 2100%;
+	padding: 10px;
+}
+p.cetvrti {
+	width: 20%;
+	position: absolute;
+	top: 2100%;
+	padding: 10px;
+	left: 104%;
+}
+.zadnjedugme {
+	position: absolute;
+	margin-top: 60%;
+	left: 40%;
+	width: 293px;
+	height: 70px;
+	border-radius: 4px;
+	background: #17c1a3;
+	color: white;
+}
